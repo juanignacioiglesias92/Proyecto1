@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 44px;
+}
+
+//*Variables main//*
+$button-background-color: #00f3bb;
+$button-font-color: #060a24;
+$button-margint: 16px;
+$button-paddingw: 16px;
+$hamburger-color: #060a24;
+$h2-font-color: #060a24;
+$h2-size-color: 36px;
+$main-background-color: #fff;
+$main-title-paddingl: 16px;
+$p-size-color: 14px;
+$p-margint: 10px;
+
+//*Estilos main//*
+
+//*Título//*
+.main-title {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    padding-left: $main-title-paddingl;
+    &
+    .first-line, .second-line{
+        display: flex;
+    }
+}
+
+.world, .hello, .pale-blue, .dot {
+    font-size: $h2-size-color;
+    color: $h2-font-color;
+}
+.world{
+    padding-left: 18px;
+}
+.paragraph{
+    padding: 0 16px;
+}
+.main-button{
+    padding: 0 $button-paddingw;
+    margin: $button-margint 0;
+}
+#button-1{
+    background-color: $button-background-color;
+    width: 100%;
+    color: $button-font-color;
+}

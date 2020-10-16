@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 44px;
+}
+
+.main-title {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding-left: 16px;
+}
+.main-title .first-line,
+.main-title .second-line {
+  display: flex;
+}
+
+.world, .hello, .pale-blue, .dot {
+  font-size: 36px;
+  color: #060a24;
+}
+
+.world {
+  padding-left: 18px;
+}
+
+.paragraph {
+  padding: 0 16px;
+}
+
+.main-button {
+  padding: 0 16px;
+  margin: 16px 0;
+}
+
+#button-1 {
+  background-color: #00f3bb;
+  width: 100%;
+  color: #060a24;
+}
+
+/*# sourceMappingURL=main.css.map */
