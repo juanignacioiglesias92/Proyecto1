@@ -1,0 +1,25 @@
+@import 'variables.scss';
+.hamburger{
+    background-color: $hamburger-color;
+    height: 2px;
+    width: 18px;
+    content: '';
+    margin-top: 5px;
+    position: absolute;
+}
+.hamburger::before{
+    background-color: $hamburger-color;
+    height: 2px;
+    width: 18px;
+    content: '';
+    margin-top: 5px;
+    position: absolute;
+}
+.hamburger::after{
+    background-color: $hamburger-color;
+    height: 2px;
+    width: 18px;
+    content: '';
+    margin-top: 10px;
+    position: absolute;
+}

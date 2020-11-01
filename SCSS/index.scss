@@ -1,24 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'hamburger.scss';
+
 header {
     height: 44px;
 }
 
-//*Variables main//*
-$button-background-color: #00f3bb;
-$button-font-color: #060a24;
-$button-margint: 16px;
-$button-paddingw: 16px;
-$hamburger-color: #060a24;
-$h2-font-color: #060a24;
-$h2-size-color: 36px;
-$main-background-color: #fff;
-$main-title-paddingl: 16px;
-$p-size-color: 14px;
-$p-margint: 10px;
 
 //*Estilos main//*
 
@@ -33,12 +20,18 @@ $p-margint: 10px;
     }
 }
 
-.world, .hello, .pale-blue, .dot {
+.world, .hello, .pale-blue{
     font-size: $h2-size-color;
     color: $h2-font-color;
 }
+.pale-blue::after{
+    content: '.';
+    font-size: $h2-size-color;
+    color: $h2-font-color;
+    margin-left: $dot-marginl;
+}
 .world{
-    padding-left: 18px;
+    padding-left: 9px;
 }
 .paragraph{
     padding: 0 16px;
@@ -46,9 +39,26 @@ $p-margint: 10px;
 .main-button{
     padding: 0 $button-paddingw;
     margin: $button-margint 0;
+    
 }
 #button-1{
     background-color: $button-background-color;
     width: 100%;
     color: $button-font-color;
+    font-size: $button-font-size;
+    height: $button-height;
+}
+.menu{
+    height: inherit;
+    width: $hamburger-width;
+    margin: $hamburger-margin;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $header-marginb;
+}
+.slogan{
+    margin-left: $slogan-marginl;
+    margin-top: $slogan-margint;
 }
