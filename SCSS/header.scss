@@ -1,0 +1,86 @@
+@import 'variablesHeader.scss';
+header{
+    height: $header-height;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $header-marginb;
+}
+
+.slogan{
+    margin-left: $slogan-marginl;
+    margin-top: $slogan-margint;
+}
+.hamburger{
+    background-color: $hamburger-color;
+    height: $hamburger-height;
+    width: $hamburger-width;
+    content: '';
+    position: absolute;
+}
+.hamburger::before{
+    background-color: $hamburger-color;
+    height: $hamburger-height;
+    width: $hamburger-width;
+    content: '';
+    margin-top: 5px;
+    position: absolute;
+}
+.hamburger::after{
+    background-color: $hamburger-color;
+    height: $hamburger-height;
+    width: $hamburger-width;
+    content: '';
+    margin-top: 10px;
+    position: absolute;
+}
+//*dentro de hamburguesa//*
+.menu{
+    width: $hamburger-width;
+    margin: $hamburger-margin;
+    &
+    input, i{
+    opacity: 0;
+    position: absolute;
+    margin-left: 4px;
+    padding-bottom: 6px;
+    }
+}
+.menu i{
+    z-index: -1;
+}
+.links{
+    display: none;
+    width: 320px;
+    height: $links-height;
+    position: absolute;
+    margin-top: $header-height;
+    background-color: $links-background-color;
+    left: 0px;
+
+    &
+    a{
+        font-size: $a-font-size;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 400;
+        line-height: $a-line-height;
+        color: $a-color;
+        padding-left: $a-padding-left;
+
+    }
+}
+
+.tick:checked ~ .links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+   
+}
+.tick:checked ~ i{
+    opacity: 1;
+}
+.tick:checked ~ .hamburger{
+    display: none;
+
+}

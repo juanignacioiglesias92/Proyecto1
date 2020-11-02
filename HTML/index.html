@@ -6,43 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="slogan">
             <img src="../assets/logo.svg" alt="logo">
-
         </div>
         <div class="menu">
-            <div class="hamburger">
-            </div>
+                <input class="tick" type="checkbox">
+                <div class="hamburger"></div>
+                <i id="cross" class="fas fa-times"></i >
+                <nav class="links">
+                    <a href="#">EPISODIOS</a>
+                    <a href="#">NOSOTROS</a>
+                    <a href="#">ENTREVISTAS</a>
+                    <a href="#">TÓPICOS</a>
+                </nav>
+            
         </div>
     </header>
     <main>
-        <div class="main-title">
-            <div class="first-line">
-                <div class="hello">
-                    Hello
+        <section class="part-1">
+            <div class="main-title">
+                <h1> Hello world pale blue dot</h1>
+                <div class="first-line">
+                    <div class="hello">
+                        Hello
+                    </div>
+                    <div class="world">
+                        world
+                    </div>
                 </div>
-                <div class="world">
-                    world
-                </div>
-            </div>
-            <div class="second-line">
                 <div class="pale-blue">
                     pale blue dot
                 </div>
             </div>
-        </div>
-        <div class="paragraph">
-            <p>Un podcast que explota el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días</p>
-        </div>
-        <div class="main-button">
-            <button id="button-1">CONOCÉ MÁS</button>
-        </div>
+            <div class="paragraph">
+                <p>Un podcast que explota el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+                </p>
+            </div>
+            <div class="main-button">
+                <button class="button-1">CONOCÉ MÁS</button>
+            </div>
+            <div class="main-content">
+                <div class="back"></div>
+                <div class="media">
+                    <h2 class="spotify" id="episodios">Episodios</h2>
+                    <iframe class="spotify" src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu"
+                        width="100%" height="232" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
+                    <iframe class="spotify" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+                        width="100%" height="232" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
+                    <iframe class="spotify" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+                        width="100%" height="232" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
+                    <iframe class="spotify" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+                        width="100%" height="232" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
 
+                </div>
+
+            </div>
+            <div class="fotograph">
+                <img id="phone" src="../assets/phone.png" alt="la historia secreta de las mujeres en la programación">
+            </div>
+        </section>
+        <section class="part-2">
+            <div class="text-1">
+                <h2>De dónde venimos</h2>
+                <p class="paragraph" id="second-text">Our posturings, our imagined self-importance, the delusion that we have some
+                    privileged
+                    position in the
+                    Universe, are challenged by this point of pale light.
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                    vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+
+            </div>
+            <div class="text-2">
+                <h2>Invitadas/os estelares</h2>
+                <div class="images">
+                    <img class="photo" src="../assets/grace-hopper.png" alt="Grace hopper">
+                    <img class="photo" src="../assets/Katie-Bouman.png" alt="Katie Bouman">
+                    <img class="photo" src="../assets/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                    <img class="photo" src="../assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Computadora antigua">
+                    <img class="photo"
+                        src="../assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+                        alt="Operadoras de computadora">
+                    <img class="photo" src="../assets/susan-kare.png" alt="Susan Kare">
+
+                </div>
+            </div>
+        </section>
+        <section class="part-3">
+            <h2 id="title-icons">Algunos de nuestros temas</h2>
+            <nav class="icons">
+                <a class="item-icons" href="#"><img src="../assets/icon1.svg" alt="trabajo remoto" id="icon1"></a>
+                <a class="item-icons" href="#"><label for="icon1">Trabajo remoto</label></a>
+                <a class="item-icons" href="#"><img src="../assets/icon2.svg" alt="repensando la programación"
+                        id="icon2"></a>
+                <a class="item-icons" href="#"><label for="icon2">Repensando la <br> programación</label></a>
+                <a class="item-icons" href="#"><img src="../assets/icon3.svg" alt="bases de código" id="icon3"></a>
+                <a class="item-icons" href="#"><label for="icon3">Bases del código</label></a>
+                <a class="item-icons" href="#"><img src="../assets/icon4.svg" alt="seguridad informática"
+                        id="icon4"></a>
+                <a class="item-icons" href="#"><label for="icon4">Seguridad Informática</label></a>
+            </nav>
+            <div class="news">
+                <div class="back-2"></div>
+                <h3> ¿Querés las últimas novedades?</h3>
+                <div class="second-button">
+                    <button class="button-2">ESCUCHÁ LOS EPISODIOS</button>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <h4>@ 2019- Hello blue pale dot</h4>
+        <div class="social-media">
+            <nav class="media-icons">
+                <a><i class="fab fa-spotify"></i></a>
+                <a><i class="fab fa-instagram"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fab fa-telegram"></i></a>
+            </nav>
+
+        </div>
+    </footer>
 </body>
 
 </html>
