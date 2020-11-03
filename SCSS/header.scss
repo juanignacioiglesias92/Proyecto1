@@ -51,7 +51,7 @@ header{
 }
 .links{
     display: none;
-    width: 320px;
+    width: 100vw;
     height: $links-height;
     position: absolute;
     margin-top: $header-height;
@@ -82,5 +82,4 @@ header{
 }
 .tick:checked ~ .hamburger{
     display: none;
-
 }

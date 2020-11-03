@@ -1,6 +1,7 @@
 @import 'reset.scss';
 @import 'variables.scss';
 @import 'header.scss';
+@import 'desktopView.scss';
 
 //*Estilos main//*
 
@@ -9,8 +10,8 @@ h1{
     display: none;
 }
 .main-title {
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
+    display: flex;
+    flex-direction: column;
     padding-left: $main-title-paddingl;
     &
     .first-line, .second-line{
@@ -22,14 +23,13 @@ h1{
     font-size: $h2-size;
     color: $h2-font-color;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 .pale-blue::after{
     content: '.';
     font-size: $h2-size;
     color: $h2-font-color;
-    margin-left: $dot-marginl;
 }
 .world{
     padding-left: $world-paddingl;
@@ -47,7 +47,7 @@ h1{
     padding: 0 $button-paddingw;
     margin: $button-margint 0 $button-marginb 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .button-1{
     background-color: $button-background-color;
@@ -62,7 +62,11 @@ h1{
 //*spotify//*
 
 .main-content{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: $media-paddingt;
+    overflow: hidden;
     
 }
 
@@ -74,12 +78,9 @@ h1{
     transform:skew(0deg, -6deg);
     position: absolute;
     z-index: -1;
+    margin-top: -600px;
 }
 .media{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: $media-paddingt;
     
 }
 #episodios{
@@ -88,8 +89,8 @@ h1{
     font-size: $episodio-size;
 }
 .spotify{
-   padding: 0 $spotify-paddingw; 
-   margin: $spotify-marginh 0 ;
+   padding: 0px $spotify-paddingw; 
+   margin: $spotify-marginh 0;
 }
 #phone{
     width: 100%;

@@ -69,7 +69,7 @@ header {
 
 .links {
   display: none;
-  width: 320px;
+  width: 100vw;
   height: 224px;
   position: absolute;
   margin-top: 44px;
@@ -100,13 +100,49 @@ header {
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .part-0 {
+    padding-left: 200px;
+  }
+
+  #principal-title {
+    flex-direction: row;
+  }
+
+  .pale-blue {
+    margin-left: 10px;
+  }
+
+  .pale-blue::after {
+    color: #0000EC !important;
+  }
+
+  #first-button {
+    width: 226px;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .main-content .back {
+    grid-column: 1/3;
+  }
+  .main-content .grid:nth-child(even) {
+    grid-column: 2/3;
+  }
+  .main-content .grid:nth-child(odd) {
+    grid-column: 1/2;
+  }
+}
 h1 {
   display: none;
 }
 
 .main-title {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   padding-left: 16px;
 }
 .main-title .first-line,
@@ -118,14 +154,13 @@ h1 {
   font-size: 36px;
   color: #060a24;
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .pale-blue::after {
   content: ".";
   font-size: 36px;
   color: #060a24;
-  margin-left: -5px;
 }
 
 .world {
@@ -146,7 +181,7 @@ h1 {
   padding: 0 16px;
   margin: 30px 0 50px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .button-1, .button-2 {
@@ -161,7 +196,11 @@ h1 {
 }
 
 .main-content {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+  overflow: hidden;
 }
 
 .back, .back-2 {
@@ -172,13 +211,7 @@ h1 {
   transform: skew(0deg, -6deg);
   position: absolute;
   z-index: -1;
-}
-
-.media {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 50px;
+  margin-top: -600px;
 }
 
 #episodios {
@@ -188,7 +221,7 @@ h1 {
 }
 
 .spotify {
-  padding: 0 16px;
+  padding: 0px 11px;
   margin: 5px 0;
 }
 
