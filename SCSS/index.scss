@@ -62,11 +62,7 @@ h1{
 //*spotify//*
 
 .main-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: $media-paddingt;
-    overflow: hidden;
+    position: relative;
     
 }
 
@@ -78,9 +74,13 @@ h1{
     transform:skew(0deg, -6deg);
     position: absolute;
     z-index: -1;
-    margin-top: -600px;
 }
 .media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: $media-paddingt;
+    overflow: hidden;
     
 }
 #episodios{
