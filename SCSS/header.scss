@@ -1,7 +1,6 @@
 @import 'variablesHeader.scss';
 header{
-    height: $header-height;
-    position: relative;
+    height: $header-height; 
     display: flex;
     justify-content: space-between;
     margin-bottom: $header-marginb;

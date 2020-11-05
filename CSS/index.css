@@ -14,7 +14,6 @@ ul {
 
 header {
   height: 44px;
-  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
@@ -100,7 +99,38 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 0 100px;
+  }
+
+  .tick,
+.hamburger {
+    display: none;
+  }
+
+  header .slogan {
+    margin-top: 22px;
+  }
+
+  .menu {
+    margin-top: 0;
+    width: 482px;
+  }
+  .menu .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    height: auto;
+    position: static;
+    background-color: white;
+    margin-top: 26px;
+    width: auto;
+  }
+  .menu .links a {
+    color: #060a24;
+  }
+
   .part-0 {
     padding-left: 200px;
   }
@@ -114,36 +144,141 @@ header {
   }
 
   .pale-blue::after {
-    color: #0000EC !important;
+    color: #0000ec !important;
+  }
+
+  .paragraph.desktop {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    width: 464px;
+    padding: 0;
   }
 
   #first-button {
     width: 226px;
   }
 
+  .back {
+    height: 916.62px !important;
+  }
+
   #main-grid {
     padding: 100px 100px 0 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 42px 1fr 1fr;
+    grid-template-rows: 48px 225px 225px 660px;
     gap: 72px;
   }
 
-  #episodios {
+  #media-title {
     grid-area: 1/1/2/3;
+    font-size: 48px;
+    line-height: 62px;
+    padding-left: 100px;
+  }
+
+  .grid.spotify {
+    margin-top: -31px;
+    transform: scale(1);
   }
 
   .grid:nth-child(odd) {
     grid-column: 2/3;
+    padding-left: 0;
   }
 
   .grid:nth-child(even) {
     grid-column: 1/2;
+    padding-right: 0;
   }
 
-  .second-grid {
+  .telephone {
+    justify-self: center;
+  }
+
+  #phone {
+    height: 660px;
+    width: auto;
+    margin: 0;
+    margin-top: -39px;
+  }
+
+  .text-2 {
+    align-self: center;
+  }
+
+  .d-title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  .images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .images .photo {
+    width: 33.3333333333vw;
+    height: 364px;
+  }
+
+  .part-3 #title-icons {
+    margin-left: 200px;
+    margin-bottom: 69px;
+  }
+
+  .part-3 .icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 60px;
+    row-gap: 29px;
+    justify-items: center;
+    align-items: flex-start;
+    padding: 0 200px;
+    line-height: 32px;
+  }
+  .part-3 .icons .item-icons:nth-child(odd) {
+    grid-row: 1/2;
+    margin-bottom: 0;
+  }
+  .part-3 .icons .item-icons:nth-child(even) {
+    grid-row: 2/3;
+  }
+  .part-3 .icons #jump {
+    display: block;
+  }
+
+  .news {
+    height: 518px;
+  }
+  .news h3 {
+    font-size: 48px;
+    line-height: 62px;
+    margin-top: 0;
+    padding-top: 213px;
+  }
+  .news .second-button {
+    justify-content: center;
+  }
+  .news .button-2 {
+    width: 345px;
+    height: 56px;
+    font-size: 18px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+    padding: 0 100px;
+    align-items: center;
+  }
+  .footer .media-icons {
+    margin: 0;
+    width: 232px;
+    justify-content: space-between;
   }
 }
 h1 {
@@ -214,7 +349,8 @@ h1 {
   height: 1200px;
   content: "";
   background: linear-gradient(#0000FF, #0000A3);
-  transform: skew(0deg, -6deg);
+  transform: skew(0deg, 175deg);
+  transform-origin: right;
   position: absolute;
   z-index: -1;
 }
@@ -227,18 +363,19 @@ h1 {
   overflow: hidden;
 }
 
-#episodios {
-  padding-bottom: 10px;
+.media .episodios {
+  padding-bottom: 21px;
   color: white;
   font-size: 36px;
 }
 
 .spotify {
-  padding: 0px 11px;
-  margin: 5px 0;
+  padding: 0px 0px;
+  margin: 0px 0;
+  transform: scaleY(0.9698275862) scaleX(0.93125);
 }
 
-#phone {
+.fotograph {
   width: 100%;
   margin: 40px 0 30px 0;
 }
@@ -258,6 +395,7 @@ h2 {
 
 .images {
   line-height: 0;
+  letter-spacing: 0;
   margin-bottom: 40px;
   margin-top: 15px;
 }
@@ -275,8 +413,7 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.icons #icon1,
-.icons #icon2, .icons #icon3, .icons #icon4 {
+.icons .icon-image {
   width: 104px;
   height: 104px;
 }
@@ -290,16 +427,27 @@ h2 {
   color: #060a24;
 }
 
+.item-icons:last-child {
+  margin-bottom: 40px;
+}
+
+#jump {
+  display: none;
+}
+
 .item-icons:nth-child(odd) {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .news {
-  height: 341px;
   position: relative;
   content: "";
+  padding-top: 0px;
   overflow: hidden;
-  padding-top: 25px;
+}
+.news .back-2 {
+  transform-origin: right;
+  margin-top: 50px;
 }
 
 h3 {
@@ -311,10 +459,18 @@ h3 {
   line-height: 42px;
   padding: 0 16px;
   font-weight: 400;
+  padding-top: 100px;
 }
 
 .button-2 {
   padding: 0 16px;
+}
+
+footer {
+  background-color: white;
+  margin-top: 0px;
+  height: 121px;
+  padding-top: 24px;
 }
 
 h4 {
@@ -322,11 +478,11 @@ h4 {
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 15px;
+  line-height: 28px;
 }
 
 .media-icons {
-  margin: 20px 0 40px 0;
+  margin: 21px 0 36px 0;
   display: flex;
   justify-content: space-evenly;
 }

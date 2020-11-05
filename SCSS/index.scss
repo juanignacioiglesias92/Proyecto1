@@ -63,15 +63,16 @@ h1{
 
 .main-content{
     position: relative;
-    
 }
+
 
 .back, .back-2{
     width: 100%;
     height: $back-height;
     content: '';
     background: linear-gradient($back-color-1,$back-color-2);
-    transform:skew(0deg, -6deg);
+    transform:skew(0deg, 175deg);;
+    transform-origin: right;
     position: absolute;
     z-index: -1;
 }
@@ -81,9 +82,8 @@ h1{
     justify-content: center;
     padding-top: $media-paddingt;
     overflow: hidden;
-    
 }
-#episodios{
+.media .episodios{
     padding-bottom: $episodios-paddingb;
     color: white;
     font-size: $episodio-size;
@@ -91,8 +91,9 @@ h1{
 .spotify{
    padding: 0px $spotify-paddingw; 
    margin: $spotify-marginh 0;
+   transform: scaleY(0.9698275862068966) scaleX(0.93125);
 }
-#phone{
+.fotograph{
     width: 100%;
     margin: $phone-margint 0 $phone-marginb 0;
 }
@@ -111,6 +112,7 @@ h2{
 //*!!parrafo*//
 .images{
     line-height: 0;
+    letter-spacing: 0;
     margin-bottom: $images-marginb;
     margin-top: $images-margint;
 }
@@ -128,7 +130,7 @@ h2{
     flex-direction: column;
     align-items: center;
     &
-    #icon1, #icon2, #icon3, #icon4{
+    .icon-image{
         width: $icon-width;
         height: $icon-height;
     }
@@ -142,17 +144,29 @@ h2{
     letter-spacing: 0;
     color: $label-color;
 }
+.item-icons:last-child{
+    margin-bottom: 40px;
+}
+
+#jump{
+    display: none;
+}
     //*icons//*
 .item-icons:nth-child(odd){
     margin-bottom: $icon-marginb;
 }
     //*novedades//*
 .news{
-    height: 341px;
     position: relative;
     content: '';
-    overflow: hidden;
     padding-top: $news-paddingt;
+    overflow: hidden;
+    &
+    .back-2{
+        transform-origin: right;
+        margin-top: 50px;
+    }
+    
 }
 h3{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -163,6 +177,7 @@ h3{
     line-height: $h3-line-height;
     padding: 0 $h3-paddingw;
     font-weight: $h3-font-weight;
+    padding-top: 100px;
 }
 .second-button{
     @extend .main-button;
@@ -172,12 +187,18 @@ h3{
     padding: 0 $button-paddingw;
 }
 //*footer//*
+footer{
+    background-color: white;
+    margin-top: 0px;
+    height: 121px;
+    padding-top: 24px;
+}
 h4{
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
     font-size: $h4-font-size;
     font-weight: $h4-font-weight;
-    margin-top: $h4-margint;
+    line-height: 28px;
 }
 .media-icons{
     margin: $media-icons-margint 0 $media-icons-marginb 0;

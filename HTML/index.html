@@ -46,7 +46,7 @@
                     pale blue dot
                 </div>
             </div>
-            <div class="paragraph">
+            <div class="paragraph desktop">
                 <p>Un podcast que explota el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
                 </p>
             </div>
@@ -58,7 +58,7 @@
             <div class="back"></div>
             <div class="main-content">
                 <div class="media" id="main-grid">
-                    <h2 id="episodios">Episodios</h2>
+                    <h2 class="episodios" id="media-title">Episodios</h2>
                     <iframe class="grid spotify"
                         src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" width="100%"
                         height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -72,29 +72,29 @@
                     <iframe class="grid spotify"
                         src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%"
                         height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                </div>
-                <div class="second-grid">
-                    <div class="fotograph">
-                        <img id="phone" src="../assets/phone.png"
+                    <div class="grid telephone">
+                        <img class="fotograph" id="phone" src="../assets/phone.png"
                             alt="la historia secreta de las mujeres en la programación">
                     </div>
-                    <div class="text-1">
-                        <h2>De dónde venimos</h2>
-                        <p class="paragraph" id="second-text">Our posturings, our imagined self-importance, the
+                    <div class="grid text-2">
+                        <h2 class="d-title">De dónde venimos</h2>
+                        <p class="paragraph desktop" id="second-text">Our posturings, our imagined self-importance, the
                             delusion that we have some
                             privileged
                             position in the
                             Universe, are challenged by this point of pale light.
+                            <br><br>
                             Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all
                             this
                             vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
                     </div>
                 </div>
+
             </div>
         </section>
         <section class="part-2">
             <div class="text-2">
-                <h2>Invitadas/os estelares</h2>
+                <h2 class="d-title">Invitadas/os estelares</h2>
                 <div class="images">
                     <img class="photo" src="../assets/grace-hopper.png" alt="Grace hopper">
                     <img class="photo" src="../assets/Katie-Bouman.png" alt="Katie Bouman">
@@ -110,18 +110,18 @@
             </div>
         </section>
         <section class="part-3">
-            <h2 id="title-icons">Algunos de nuestros temas</h2>
+            <h2 class="d-title" id="title-icons">Algunos de nuestros temas</h2>
             <nav class="icons">
-                <a class="item-icons" href="#"><img src="../assets/icon1.svg" alt="trabajo remoto" id="icon1"></a>
+                <a id="icon1" class="item-icons icon-image" href="#"><img src="../assets/icon1.svg" alt="trabajo remoto"></a>
                 <a class="item-icons" href="#"><label for="icon1">Trabajo remoto</label></a>
-                <a class="item-icons" href="#"><img src="../assets/icon2.svg" alt="repensando la programación"
-                        id="icon2"></a>
+                <a id="icon2" class="item-icons icon-image" href="#"><img src="../assets/icon2.svg" alt="repensando la programación"
+                        ></a>
                 <a class="item-icons" href="#"><label for="icon2">Repensando la <br> programación</label></a>
-                <a class="item-icons" href="#"><img src="../assets/icon3.svg" alt="bases de código" id="icon3"></a>
+                <a id="icon3" class="item-icons icon-image" href="#"><img src="../assets/icon3.svg" alt="bases de código"></a>
                 <a class="item-icons" href="#"><label for="icon3">Bases del código</label></a>
-                <a class="item-icons" href="#"><img src="../assets/icon4.svg" alt="seguridad informática"
-                        id="icon4"></a>
-                <a class="item-icons" href="#"><label for="icon4">Seguridad Informática</label></a>
+                <a id="icon4" class="item-icons icon-image" href="#"><img src="../assets/icon4.svg" alt="seguridad informática"
+                        ></a>
+                <a class="item-icons" href="#"><label for="icon4">Seguridad<br id="jump"> Informática</label></a>
             </nav>
             <div class="news">
                 <div class="back-2"></div>
@@ -132,15 +132,17 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <h4>@ 2019- Hello blue pale dot</h4>
         <div class="social-media">
-            <nav class="media-icons">
-                <a><i class="fab fa-spotify"></i></a>
-                <a><i class="fab fa-instagram"></i></a>
-                <a><i class="fab fa-twitter"></i></a>
-                <a><i class="fab fa-facebook"></i></a>
-                <a><i class="fab fa-telegram"></i></a>
+            <nav>
+                <ul class="media-icons">
+                    <li><a><i class="fab fa-spotify"></i></a></li>
+                    <li><a><i class="fab fa-instagram"></i></a></li>
+                    <li><a><i class="fab fa-twitter"></i></a></li>
+                    <li><a><i class="fab fa-facebook"></i></a></li>
+                    <li><a><i class="fab fa-telegram"></i></a></li>
+                </ul>
             </nav>
 
         </div>
